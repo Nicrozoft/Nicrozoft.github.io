@@ -162,7 +162,7 @@ a:hover { color:#0078D4; }
 
 .btn-primary:hover,
 .btn-primary:focus {
-    background-color:#086969;
+    background-color:#0848A4;
 }
 
 .btn-primary.disabled, 
@@ -183,7 +183,7 @@ a:hover { color:#0078D4; }
 
 .navbar-toggler:focus { box-shadow: none; }
 .navbar-brand {
-    color: #3399CC;
+    color: #0078D4;
     font-size: 1.6rem;
 }
 
