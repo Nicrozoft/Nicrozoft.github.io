@@ -289,6 +289,8 @@ p, .tm-text-gray { color: #999; }
     overflow: hidden;
     text-align: center;
     cursor: pointer;
+    border: 2px solid #C0C0C0;
+    border-radius: 10px;
 }
 
 .tm-video-item img {
@@ -311,6 +313,7 @@ p, .tm-text-gray { color: #999; }
 .tm-video-item figcaption::before,
 .tm-video-item figcaption::after {
     pointer-events: none;
+    border-radius: 10px;
 }
 
 .tm-video-item figcaption,
@@ -458,8 +461,24 @@ figure.effect-ming:hover img { opacity: 0.4; }
     background-color: #009999;
 }
 
+
+
 .tm-footer { font-size: 0.95rem; }
 .tm-footer-title { font-size: 1.4rem; }
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: grid;
+    grid-template-rows: auto 1000fr auto; /* 修改这一行 */
+}
+
+footer.tm-bg-gray {
+    grid-row-start: 100; /* 修改这一行 */
+    grid-row-end: 111; /* 修改这一行 */
+}
 
 /* Videos */
 #tm-video-container {
@@ -487,6 +506,8 @@ figure.effect-ming:hover img { opacity: 0.4; }
 .tm-video-details {
     height: 100%;
     padding: 40px;
+    border: 2px solid #C0C0C0;
+    border-radius: 10px;
 }
 
 /* About */
