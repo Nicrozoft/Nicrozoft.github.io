@@ -472,12 +472,12 @@ html, body {
 }
 body {
     display: grid;
-    grid-template-rows: auto 1000fr auto; /* 修改这一行 */
+    grid-template-rows: auto 1000fr auto;
 }
 
 footer.tm-bg-gray {
-    grid-row-start: 100; /* 修改这一行 */
-    grid-row-end: 111; /* 修改这一行 */
+    grid-row-start: 100;
+    grid-row-end: 111;
 }
 
 /* Videos */
@@ -508,6 +508,10 @@ footer.tm-bg-gray {
     padding: 40px;
     border: 2px solid #C0C0C0;
     border-radius: 10px;
+}
+
+.tm-mb-90 div:first-child img {
+  border-radius: 8.5px;
 }
 
 /* About */
