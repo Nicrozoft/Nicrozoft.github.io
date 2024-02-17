@@ -214,12 +214,16 @@ a.tm-text-primary:hover { color:#666666; }
     justify-content: space-between;
 }
 
-.left-half {
-    width: calc(50% - 10px);
+.left-cont {
+    width: calc(40% - 10px);
     padding-right: 10px;
 }
-.right-half {
-    width: calc(50% - 10px);
+.mid-cont {
+    width: calc(30% - 10px);
+    padding-right: 10px;
+}
+.right-cont {
+    width: calc(30% - 10px);
     padding-left: 10px;
 }
 
