@@ -210,6 +210,19 @@ a.tm-text-primary:hover { color:#666666; }
     text-align: center;
 }
 
+.container_1 {
+    justify-content: space-between;
+}
+
+.left-half {
+    width: calc(50% - 10px);
+    padding-right: 10px;
+}
+.right-half {
+    width: calc(50% - 10px);
+    padding-left: 10px;
+}
+
 .nav-item { margin-right: 30px; }
 .nav-item:last-child { margin-right: 0; }
 
@@ -247,6 +260,11 @@ a.tm-text-primary:hover { color:#666666; }
 .nav-link-6.active,
 .nav-link-6:hover {
     border-color: #0078D4;
+}
+
+.nav-link-7.active,
+.nav-link-7:hover {
+    border-color: #FFD700;
 }
 
 .tm-search-input {
