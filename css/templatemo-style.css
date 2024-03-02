@@ -639,6 +639,9 @@ select:not([multiple]) {
         background: white;
         width: 150px;
         padding: 15px;
+        border: 2px solid #C0C0C0;
+        border-radius: 10px;
+        z-index: 9999;
     }
 
     .tm-container-content { max-width: 870px; }
