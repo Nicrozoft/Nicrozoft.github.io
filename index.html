@@ -1,682 +1,157 @@
-﻿
-
-
-<!DOCTYPE html>
-<html lang="zh-CN">
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nicrozoft</title>
-    
-
-<meta charset="UTF-8">
-<meta name="keywords" content="Nicrozoft"/>
-<meta name="description" content="Nicrozoft 官方网站"/>
-<meta name="baidu-site-verification" content="UW1SBiMHO7" />
-<meta name="google-site-verification" content="YTgbOq_0TDShJS6KTcUYCQoAAZTm308SJ7ibsafBD_Y" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" type="image/png" href="Sources/cdn/icon.ico"/>
-<link rel="stylesheet" href="https://cdn.acwing.com/static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdn.acwing.com/static/web/node_modules/bootstrap-toggle/css/bootstrap-toggle.min.css">
-<link rel="stylesheet" href="https://cdn.acwing.com/static/web/css/signform.css">
-<link rel="stylesheet" href="https://cdn.acwing.com/static/jquery-ui-dist/jquery-ui.min.css">
-
-
-<!--link rel="stylesheet" href="https://cdn.acwing.com/static/web/css/pace.css"-->
-<!--script src="https://cdn.acwing.com/static/web/js/pace.js"></script-->
-<script>
-    let onbeforeunload_functions = [];
-</script>
-
-
-<style>
-    /* latin */
-    @font-face {
-      font-family: 'Satisfy';
-      font-style: normal;
-      font-weight: 400;
-      src: local('Satisfy Regular'), local('Satisfy-Regular'), url(https://cdn.acwing.com/static/web/fonts/rP2Hp2yn6lkG50LoCZOIHQ.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
-
-    /* latin-ext */
-    @font-face {
-      font-family: 'Lato';
-      font-style: italic;
-      font-weight: 400;
-      src: local('Lato Italic'), local('Lato-Italic'), url(https://cdn.acwing.com/static/web/fonts/S6u8w4BMUTPHjxsAUi-qJCY.woff2) format('woff2');
-      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-    }
-    /* latin */
-    @font-face {
-      font-family: 'Lato';
-      font-style: italic;
-      font-weight: 400;
-      src: local('Lato Italic'), local('Lato-Italic'), url(https://cdn.acwing.com/static/web/fonts/S6u8w4BMUTPHjxsAXC-q.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
-    /* latin-ext */
-    @font-face {
-      font-family: 'Lato';
-      font-style: italic;
-      font-weight: 700;
-      src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://cdn.acwing.com/static/web/fonts/S6u_w4BMUTPHjxsI5wq_FQft1dw.woff2) format('woff2');
-      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-    }
-    /* latin */
-    @font-face {
-      font-family: 'Lato';
-      font-style: italic;
-      font-weight: 700;
-      src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://cdn.acwing.com/static/web/fonts/S6u_w4BMUTPHjxsI5wq_Gwft.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
-    /* latin-ext */
-    @font-face {
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 400;
-      src: local('Lato Regular'), local('Lato-Regular'), url(https://cdn.acwing.com/static/web/fonts/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
-      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-    }
-    /* latin */
-    @font-face {
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 400;
-      src: local('Lato Regular'), local('Lato-Regular'), url(https://cdn.acwing.com/static/web/fonts/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
-    /* latin-ext */
-    @font-face {
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 700;
-      src: local('Lato Bold'), local('Lato-Bold'), url(https://cdn.acwing.com/static/web/fonts/S6u9w4BMUTPHh6UVSwaPGR_p.woff2) format('woff2');
-      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-    }
-    /* latin */
-    @font-face {
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 700;
-      src: local('Lato Bold'), local('Lato-Bold'), url(https://cdn.acwing.com/static/web/fonts/S6u9w4BMUTPHh6UVSwiPGQ.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
-</style>
-<script src="https://cdn.acwing.com/static/jquery/js/jquery-3.3.1.min.js"></script>
-<script src="https://cdn.acwing.com/static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-<script src="https://cdn.acwing.com/static/web/node_modules/bootstrap-toggle/js/bootstrap-toggle.min.js"></script>
-<script src="https://cdn.acwing.com/static/jquery-ui-dist/jquery-ui.min.js"></script>
-<script src="https://cdn.acwing.com/static/web/node_modules/jquery.cookie/jquery.cookie.js"></script>
-<script>
-    $(document).ready(function () {
-        var csrftoken = $.cookie('csrftoken');
-
-        function csrfSafeMethod(method) {
-            // these HTTP methods do not require CSRF protection
-            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
-        }
-
-        $.ajaxSetup({
-            beforeSend: function(xhr, settings) {
-                if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
-                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
-                }
-            },
-            cache: true
-        });
-    });
-</script>
-<script src="https://cdn.acwing.com/static/web/js/signform-0.0.1.js"></script>
-<script src="https://cdn.acwing.com/static/web/js/handlebars-v1.3.0.js"></script>
-<script src="https://cdn.acwing.com/static/web/js/effect_anchor-0.0.1.js"></script>
-<script src="https://cdn.acwing.com/static/web/js/editor/utils-0.0.1.js"></script>
-
-<script>
-    let user_state = {
-        is_authenticated: false,
-        is_pc: false,
-        is_tablet: false,
-        is_mobile: false,
-    };
-    if (user_state.is_authenticated){
-        user_state.user_id = None;
-        user_state.info = "";
-    }
-    
-        user_state.is_pc = true;
-    
-</script>
-<script>
-    let GLOBAL_COMMENT_SONS = {};
-</script>
-<style>
-    
-        #acwing_body {
-            background: white url("Sources/cdn/background.png") no-repeat center center;
-            background-size: cover;
-            background-attachment:fixed;
-        }
-    
-
-    
-    @media (min-width: 768px) and (max-width: 1000px) {
-       .collapse {
-           display: none !important;
-       }
-    }
-    .popover {
-        z-index: 1000000 !important;
-    }
-
-    @media (min-width: 768px) {
-      .container {
-        width: 750px;
-      }
-    }
-    @media (min-width: 992px) {
-      .container {
-        width: 900px;
-      }
-    }
-    @media (min-width: 1200px) {
-      .container {
-        width: 1000px;
-      }
-    }
-
-    @media (min-width: 1300px) {
-      .container {
-        width: 1170px;
-      }
-    }
-</style>
-
-
-<link rel="stylesheet" href="https://cdn.acwing.com/static/plugins/css/ace.min.css">
-<link rel="stylesheet" href="https://cdn.acwing.com/static/martor/css/martor.min.css">
-
-    <link rel="stylesheet" href="https://cdn.acwing.com/static/web/css/martor.css">
-
-<link rel="stylesheet" href="https://cdn.acwing.com/static/web/css/file_system/file/content/comment.css">
-
-
-    <link rel ="stylesheet" href="https://cdn.acwing.com/static/web/css/style-0.0.16.css">
-
-<link rel="stylesheet" href="https://cdn.acwing.com/static/web/css/base/navbar.css">
-
-    
-    
-
-
-    <link rel="stylesheet" href="https://cdn.acwing.com/static/web/css/about/index-0.0.10.css" />
-
-
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="shortcut icon" type="image/png" href="img/NZ.ico">
 </head>
-<body id="acwing_body" style="min-height: 100vh;">
+<body>
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
 
-<div id="acwing_page" >
-    <nav class="navbar navbar-inverse navbar-fixed-top navbar-expand-lg" style="z-index: 10;">
-        <div class="container">
-            <!-- Header -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    
-                </button>
-                
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
 
-                
-                <a class="navbar-brand" href="./index.html">Nicrozoft</a>
-            </div>
-
-            <!-- Items -->
-            <div class="collapse navbar-collapse" id="topNavBar">
-                <ul class="nav navbar-nav">
-                    <li class=" active "><a href="./index.html">Nicrozoft 旧版网站</a></li>
-                    <li id="navigation_activity_active_id" class=""><a href="./index.html">病毒</a></li>
-                    <li class=""><a href="./index.html">病毒</a></li>
-                    <li id="navigation_competition_active_id" class=""><a href="./index.html">病毒</a></li>
-                    <li class=""><a href="./index.html">病毒</a></li>
-                    <li class="">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            病毒
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="./index.html">病毒</a></li>
-                            <li><a href="./index.html">病毒</a></li>
-                            <li id="navigation_store_active_id" class=""><a href="./index.html">病毒</a></li>
-                            <li><a href="./index.html">病毒</a></li>
-                        </ul>
-                    </li>
-                    <li class=""><a href="../index.html">前往新版 Nicrozoft 网站</a></li>
-                </ul>
-
-                <ul class="nav navbar-nav navbar-right">
-                    
-                        
-                    
-                </ul>
+    </div>
+                            
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                Nicrozoft
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-1 active" aria-current="page" href="index.html">主页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-2" href="virlist.html">病毒</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-3" href="oslist.html">操作系统</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-4" href="tools.html" target="_self">工具及其他产品</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-5" href="group.html" target="_self">产品测试及交流群</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-7" href="recommend.html" target="_self">推荐</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-6" href="about.html" target="_self">关于 Nicrozoft</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:window.history.back(-1)" target="_self">返回</a>
+                </li>
+            </ul>
             </div>
         </div>
     </nav>
-    <div class="base_body">
-    
-    <div id="overlay"></div>
-    
-    <div class="container">
-        <div class="row">
-            <div id="file_display_field" class="col-xs-offset-0 col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8">
-                
- 
 
-<div id="file-content-abstract-field-7252512" class="panel panel-default about-index-file-panel file-content-abstract-page-flag">
-    <div class="panel-body about-index-file-panel-body">
-        <div class="about-index-file-type">
-            病毒
-            <a href="./nicrozoft.html" target="_blank"><span class="file-field-title pull-right">Nicrozoft_Super_WindowsKillerVirus</span></a>
-        </div>
-        <hr style="margin: 0 0 10px 0;">
-        <div class="row" style="margin: 0">
-            <div class="col-xs-2 col-sm-1">
-                <a href="./nicrozoft.html" target="_blank">
-                    <img class="img-circle" src="Sources/cdn/Nicrozoft.jpg"
-                        
-                            alt="Nicrozoft的头像"
-                        
-                        width="45px">
-                </a>
-            </div>
-            <div class="col-xs-10 col-sm-11">
-                <a href="./nicrozoft.html" target="_blank">
-                    <span class="about-index-file-panel-username">
-                        
-                            Nicrozoft
-                        
-                    </span>
-                </a>
-                <br>
-                <span title="6666-66-66 66:66">
-                    <span class="about-index-file-panel-time">666分钟后</span>
-                </span>
-            </div>
-        </div>
-        <div style="padding-left: 45px;">
-            
-                
-
-<div id="file-content-field-7252512" class="file-content-field">
-    <div class="main-martor main-martor-content" data-field-name="content">
-        <div class="section-martor">
-            <div id="file-martor-field-7252512" class="ui bottom attached tab active martor-preview" data-tab="preview-tab-content">
-                <h1>超级病毒 Nicrozoft Super WindowsKiller Virus</h1>
-<h1>下载</h1>
-<h2>Releases</h2>
-<a href="Sources\5.0\STD\Nicrozoft_Super_WindowsKiller_Virus.zip" download="Nicrozoft_Super_WindowsKiller_Virus.zip">v5.0 正式版</a>
-<br>
-<a href="Sources\5.0\NO_SIGN\Nicrozoft_Super_WindowsKiller_Virus.zip" download="Nicrozoft_Super_WindowsKiller_Virus.zip">v5.0 无签名版</a>
-<br>
-<a href="Sources\5.0\PUBLIC\Nicrozoft_Super_WindowsKiller_Virus.zip" download="Nicrozoft_Super_WindowsKiller_Virus.zip">v5.0 公开版</a>
-<br>
-<a href="Sources\4.0\STD\Nicrozoft_Super_WindowsKiller_Virus.zip" download="Nicrozoft_Super_WindowsKiller_Virus.zip">v4.0 正式版</a>
-<br>
-<a href="Sources\4.0\NO_SIGN\Nicrozoft_Super_WindowsKiller_Virus.zip" download="Nicrozoft_Super_WindowsKiller_Virus.zip">v4.0 无签名版</a>
-<br>
-<a href="Sources\4.0\WEAK\Nicrozoft_Super_WindowsKiller_Virus.zip" download="Nicrozoft_Super_WindowsKiller_Virus.zip">v4.0 弱化版</a>
-<br>
-<a href="Sources\4.0\PE\Nicrozoft_Super_WindowsKiller_Virus.zip" download="Nicrozoft_Super_WindowsKiller_Virus.zip">v4.0 PE特供版</a>
-<br>
-<a href="Sources\4.0\DEVCPP\Nicrozoft_Super_WindowsKiller_Virus.zip" download="Nicrozoft_Super_WindowsKiller_Virus.zip">v4.0 Dev-C++</a>
-<br>
-<a href="Sources\3.0\Nicrozoft_Super_WindowsKiller_Virus.zip" download="Nicrozoft_Super_WindowsKiller_Virus.zip">v3.0</a>
-<br>
-<a href="Sources\2.0\Nicrozoft_Super_WindowsKiller_Virus.zip" download="Nicrozoft_Super_WindowsKiller_Virus.zip">v2.0</a>
-<br>
-<a href="Sources\1.0\Nicrozoft_Super_WindowsKiller_Virus.zip" download="Nicrozoft_Super_WindowsKiller_Virus.zip">v1.0</a>
-<br>
-            </div>
-        </div><!-- end  /.section-martor -->
+    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/BG.jpg">
     </div>
-</div>
-<a id="file-content-filed-more-btn-7252512" style="display: none; margin-left: -30px; cursor: pointer;">展开</a>
-<script>
-    $(document).ready(function () {
 
-        $('#file-martor-field-7252512 > pre').each(function(i, block){
-            hljs.highlightBlock(block);
-        });
-
-        let math_elemtnt = document.getElementById("file-martor-field-7252512");
-        MathJax.Hub.Queue(["Typeset", MathJax.Hub, math_elemtnt]);
-
-        let $block = $("#file-content-field-7252512");
-        let $btn =  $('#file-content-filed-more-btn-7252512');
-
-        $block.find("img").on('click', function() {
-          $('#overlay')
-            .css({backgroundImage: `url(${this.src})`})
-            .addClass('open')
-            .one('click', function() { $(this).removeClass('open'); });
-        });
-
-        $block.find("img").css("cursor", "pointer");
-
-        let $max_height = 300;
-        
-
-        if ($block.height() >= $max_height){
-           $btn.show();
-        }
-        $btn.click(function () {
-            if ($(this).text() === "展开") {
-                $block.animate({"max-height" : $block.prop("scrollHeight")});
-                $(this).text("收起");
-            } else {
-                $([document.documentElement, document.body]).animate({
-                    scrollTop: $("#file-content-abstract-field-7252512").offset().top - 55 - $(window).height() * 0.1
-                });
-                $block.animate({"max-height" : $max_height + "px"});
-                $(this).text("展开");
-            }
-        });
-    });
-</script>
-            
+    <div class="container-fluid tm-container-content tm-mt-60">
+        <div class="row mb-4">
+            <h2 class="col-6 tm-text-primary">
+                Nicrozoft 产品
+            </h2>
         </div>
-        <hr style="margin: 10px 0 0 0;">
-        <div class="btn-group btn-group-justified" role="group" style="padding-bottom: 5px;">
-            <div class="btn-group" role="group">
-                
-    <a class="btn btn-link" title="赞" style="cursor: pointer;" data-toggle="modal" data-target="#login-modal">
-        <span class="glyphicon glyphicon-heart-empty form_vote_7252512_heart" style="top: 2px;"></span>
-        &nbsp;
-        <span class="form_vote_7252512_votecnt">
-            
-                666
-            
-        </span>
-    </a>
-
-            </div>
-            <div class="btn-group" role="group">
-                <a id="comment_field_btn_7252512" class="btn btn-link" title="评论">
-    <span class="file_commentcnt glyphicon glyphicon-comment" style="top: 2px;"></span> &nbsp;
-    <span id="file_commentcnt_7252512">
-        
-            评论
-        
-    </span>
-</a>
-            </div>
-            <div class="btn-group" role="group">
-                
-    <a class="btn btn-link" title="收藏" style="cursor: pointer;" data-toggle="modal" data-target="#login-modal">
-        <span class="glyphicon glyphicon-star-empty form_collect_7252512_star" style="top: 2px;"></span>
-        &nbsp;
-        <span class="form_collect_7252512_collectcnt">
-            
-                666
-            
-        </span>
-    </a>
-
-            </div>
-        </div>
-        <hr style="margin: 0 0 10px 0;">
-        
-            <div id="comment_field_7252512" style="background-color: #f8f8f8; margin: -10px; padding: 10px; display: none;">
-                
-
-<h3 style="font-weight: normal; margin: 10px 0 30px 0;">0 评论</h3>
-<div class="row">
-    <div class="col-md-1 col-sm-2 col-xs-3">
-        
-    </div>
-    
-        <div class="col-xs-12">
-            <form class="comment_reply_form" role="form" enctype="multipart/form-data">
-                <input type="hidden" name="csrfmiddlewaretoken" value="2xjafPtxi38oUlaVwm2YnNXWX4J8J1P2ptWDLhs008TJAFmvv4iaRdLg6XlRIPWk">
-                <div data-toggle="modal" data-target="#login-modal">
-                    <textarea class="file-comment" name="content" cols="40" rows="2" maxlength="3000" required title="回复" placeholder="在这里写评论...（支持MarkDown和Latex语法）"></textarea>
+        <div class="row tm-gallery">
+        	<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+                    <img src="img/virus.jpg" alt="Image" class="img-fluid">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>病毒</h2>
+                        <a href="virlist.html">View more</a>
+                    </figcaption>                    
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">病毒</span>
                 </div>
-            </form>
-            <div class="col-md-offset-10 col-md-2 col-sm-offset-9 col-sm-3 col-xs-offset-7 col-xs-5">
-                <button class="form-control btn btn-link" style="border-radius: 5px"
-                        data-toggle="modal"
-                        data-target="#login-modal">
-                    提交评论
-                </button>
             </div>
-        </div>
-    
-</div>
-
-
-
-
-<div id="comment_list_field_7252359" class="comment_list_field">
-    
-    
-</div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+                    <img src="img/OS.jpg" alt="Image" class="img-fluid">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>操作系统</h2>
+                        <a href="oslist.html">View more</a>
+                    </figcaption>                    
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">操作系统</span>
+                </div>
             </div>
-        
-        <script>
-            $(document).ready(function () {
-                $('#comment_field_btn_7252359').click(function () {
-                    let $comment_field = $("#comment_field_7252359");
-                    $comment_field.slideToggle(500, function () {
-                        if ($comment_field.length > 0) {
-                            $('#comment_reply_form_top_7252359 > textarea').focus();
-                        }
-                    });
-                });
-            });
-        </script>
-    </div>
-</div>
-                
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+                    <img src="img/tools.jpg" alt="Image" class="img-fluid">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>工具及其他产品</h2>
+                        <a href="tools.html">View more</a>
+                    </figcaption>
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">工具及其他产品</span>
+                </div>
             </div>
-        </div>
-    </div>
-
-
-
-
-<div id="loading_file_gif" class="panel panel-default about-index-file-panel" style="background-color: #FFFFFF; display: none">
-    <div class="panel-body about-index-file-panel-body">
-        <div id="loading_gif">
-            <img class="img-circle" src="https://cdn.acwing.com/static/web/gif/img_loading.gif"
-                 width="80px"
-                 alt="加载中" title="加载中" style="display: block; margin: 0 auto;" />
-        </div>
-    </div>
-</div>
-<div id="modal-danger" class="modal modal-message modal-danger fade" style="display: none;" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <i class="glyphicon glyphicon-fire"></i>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+                    <img src="img/group.jpg" alt="Image" class="img-fluid">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>产品测试及交流群</h2>
+                        <a href="group.html">View more</a>
+                    </figcaption>
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">产品测试及交流群</span>
+                </div>
             </div>
-            <div class="modal-body">你确定删除吗？</div>
-            <div class="modal-footer">
-                <form id="modal_danger_delete_url" method="post" action="" enctype="multipart/form-data">
-                    <input type="hidden" name="csrfmiddlewaretoken" value="2xjafPtxi38oUlaVwm2YnNXWX4J8J1P2ptWDLhs008TJAFmvv4iaRdLg6XlRIPWk">
-                    <button class="btn" type="button" data-dismiss="modal">取消</button>
-                    <button id="modal_danger_delete_url_btn" class="btn btn-danger" data-dismiss="modal" type="submit">
-                        删除
-                    </button>
-                </form>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+                    <img src="img/about.jpg" alt="Image" class="img-fluid">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>关于 Nicrozoft</h2>
+                        <a href="about.html">View more</a>
+                    </figcaption>
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">关于 Nicrozoft</span>
+                </div>
             </div>
-        </div> <!-- / .modal-content -->
-    </div> <!-- / .modal-dialog -->
-</div>
-</div>
+        </div> <!-- row -->
+    </div> <!-- container-fluid, tm-container-content -->
 
-    <footer id="acwing_footer" class="footer">
-    <div class="container">
-        <hr>
-        <div class="row">
-            <div class="col-sm-8 copyright">
-                <span>
-                    © 2018-2022 Nicrozoft 版权所有
-                    &nbsp;|&nbsp;
-                    <a href="http://beian.miit.gov.cn/">京ICP备17053197号-1</a>
-                </span>
+    <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+        <div class="container-fluid tm-container-small">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12 px-5 mb-5">
+                    <h3 class="tm-text-primary mb-4 tm-footer-title">Nicrozoft</h3>
+                    <p>Nicrozoft 是一个技术性组织，拥有很多产品，包括病毒，操作系统，实用工具等。</p>
+                </div>
             </div>
-            <div class="text-right col-sm-4 region-us">
-                <div class="links">
-                    <a href="./nicrozoft.html">用户协议</a>
-                    &nbsp;|&nbsp;
-                    <a href="./nicrozoft.html">常见问题</a>
-                    &nbsp;|&nbsp;
-                    <a href="./nicrozoft.html">联系我们</a>
+            <div class="row">
+                <div class="col-lg-8 col-md-7 col-12 px-5 mb-3">
+                    Copyright © Nicrozoft Corporation. All rights reserved.
                 </div>
             </div>
         </div>
-    </div>
-</footer>
-</div>
-
-
+    </footer>
     
-
-<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-    	<div class="modal-dialog" style="width: 85%; max-width: 750px;">
-			<div class="modal-content">
-				<div class="modal-header" align="center">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-					</button>
-                    <span class = "acwing-brand">CopyRight © Nicrozoft Corporation</span>
-				</div>
-
-                <!-- Begin # DIV Form -->
-                <div id="div-forms">
-
-                    <!-- Begin # Login Form -->
-                    <form class="sign-form" id="login-form" role="form" action="/user/account/signin/" method="post" enctype="multipart/form-data">
-                        <input type="hidden" name="csrfmiddlewaretoken" value="2xjafPtxi38oUlaVwm2YnNXWX4J8J1P2ptWDLhs008TJAFmvv4iaRdLg6XlRIPWk">\
-                    </form>
-                    <!-- End # Login Form -->
-                </div>
-                <!-- End # DIV Form -->
-
-			</div>
-		</div>
-	</div>
-    <!-- END # MODAL LOGIN -->
-
-
-
-
-
-
-<div id="modal-warning" class="modal modal-message modal-warning fade" style="display: none;" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <i class="glyphicon glyphicon-warning-sign"></i>
-            </div>
-            <div id="warning_message_content" class="modal-body"></div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-warning" data-dismiss="modal">OK</button>
-            </div>
-        </div> <!-- / .modal-content -->
-    </div> <!-- / .modal-dialog -->
-</div>
-
-
-    
-
-<script>
-    let ABOUT_VIDEOJS_OPTIONS = {
-            autoplay : false,
-            controls : true,
-            controlBar : {
-            currentTimeDisplay : true,
-            timeDivider : true,
-            durationDisplay : true,
-            remainingTimeDisplay : false,
-            volumePanel : {
-                inline : false,
-                vertical : true
-            }
-        },
-        preload : 'metadata',
-    };
-    let GLOBAL_FILE_COUNT = 10;
-    
-        let GLOBAL_PULL_FILES_URL = "/about/pull_files/";
-    
-</script>
-<script src="https://cdn.acwing.com/static/web/js/about/pull_files-0.0.12.js"></script>
-
-
-
-
-<script src="https://cdn.acwing.com/static/web/js/copy_with_link.js"></script>
-<script>
-    let article_author = "";
-    if (article_author.length === 0) article_author = "Nicrozoft";
-    let VIDEO_CONTENT_WATERMARK_LOGO_URL = "https://cdn.acwing.com/static/web/img/32X32.ico";
-</script>
-<script src="https://cdn.acwing.com/static/plugins/js/highlight.min.js"></script>
-<script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-          tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-          showMathMenu: false,
+    <script src="js/plugins.js"></script>
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
         });
-</script>
-<script type="text/javascript" src="https://cdn.acwing.com/static/MathJax-2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script>
-    $('pre').each(function(i, block){
-        hljs.highlightBlock(block);
-    });
-</script>
-
-<script type="text/javascript" src="https://cdn.acwing.com/static/web/js/file_system/file/operation/comment/pull-0.0.6.js"></script>
-<script>
-    
-    
-        $(document).ready(function () {
-            let $weixin_connect_link = $('#third_party_weixin_connect_link_base');
-            $weixin_connect_link.attr("href", "/third_party/weixin/open_platform/login/apply_code/?source_url=/about/");
-            if (typeof WeixinJSBridge === "object" && typeof WeixinJSBridge.invoke === "function") {
-                callback();
-            } else {
-                if (document.addEventListener) {
-                    document.addEventListener("WeixinJSBridgeReady", callback, false);
-                } else if (document.attachEvent) {
-                    document.attachEvent("WeixinJSBridgeReady", callback);
-                    document.attachEvent("onWeixinJSBridgeReady", callback);
-                }
-            }
-            function callback() {
-                $weixin_connect_link.attr("href", "/third_party/weixin/open_platform/login/apply_code/1/?source_url=/about/");
-            }
-        });
-    
-    window.onbeforeunload = function (ev) {
-
-        
-
-        let notify = false;
-        for (let i = 0; i < onbeforeunload_functions.length; i ++ ){
-            let ret = onbeforeunload_functions[i]();
-            if (ret){
-                notify = true;
-            }
-        }
-        if (notify){
-            return true;
-        }
-    };
-
-    let CLICK_URL = "/status/count/click/";
-</script>
-<script src="https://cdn.acwing.com/static/web/js/status/click.js"></script>
-
+    </script>
 </body>
 </html>
