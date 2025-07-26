@@ -1,0 +1,6 @@
+文件名：Windows_11_Extended_ProfessionalWorkstation_v5.1_Nicrozoft.iso
+大小：21.2 GB (22,764,814,336 字节)
+CRC32: 2A4DD165
+MD5: 524f8923f558b2bf0722309d4e7cf7ef
+SHA1: 571f98a081b2a625f814ce9a4e4011708d9d1ddd
+SHA256: 3e5360d817ff01497f6b1eff0a698353c64e84f97b6c302df22b5cde140d12cb
