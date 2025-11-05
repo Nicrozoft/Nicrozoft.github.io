@@ -81,8 +81,8 @@
                     基本版本未预装 Office、Adobe 等大型软件，仅预装系统优化必要的软件，具有更小的体积。<br>
                     此系统并不基于任何其他修改版。除安装程序外,也没有参考其他任何修改版。只有安装程序使用了 Rectify 11 的部分文件，
                     使其更加美观。同时该版本修复了安装程序启动管理器被吊销的问题。<br>
-                    此系统使用 Windows 部署映像服务和管理工具 (Dism) 封装，并使用
-                    Wimlib-ImageX 将镜像转为 ESD 格式并添加卷信息。<br>
+                    此系统使用 Windows 部署映像服务和管理工具 (Dism) 封装并将镜像转为 ESD 格式，
+                    并使用 Dism++ 添加卷标识符。<br>
                     系统更改:<br>
                     1.添加 80+ 个主题。<br>
                     2.集成了所有版本的 Microsoft Visual C++ Runtime。<br>
@@ -95,10 +95,13 @@
                     9.集成了 .NET 8.0 和 9.0，以及 .NET Framework 4.8.1 和 3.5 运行库。<br>
                     10.安装了 NanaZip（一款基于 7-Zip 并使用 Fluent 设计重构界面的压缩解压缩软件）。<br>
                     11.调整了 CPU 的调度偏好，提升了性能。<br>
-                    12.内置的激活工具由 HEU 改为 Nicrozoft Activator（基于 MAS）。<br>
+                    12.内置的激活工具从 HEU 改为 Nicrozoft Activator（基于 MAS）。<br>
+                    13.集成了 DirectX 运行时。<br>
+                    14.预装了一款驱动软件 Driver Boost。<br>
+                    15.预装了一款支持 HDR 且具有 OCR、拾色等功能的开源截图软件 Snow Shot。<br>
                     完整版额外内容:<br>
                     1.安装了 Office 2024 专业增强版，并使用 Ohook 模式永久激活。<br>
-                    2.安装了 Adobe 2025 中的 Photoshop、Premiere、After Effects、Acrobat 四款软件。<br>
+                    2.安装了 Adobe 2025 中的 Photoshop、Premiere、After Effects、Audition、Acrobat 五款软件。<br>
                     3.安装了 Files App。<br>
                     4.安装了 Visual Studio Code 并安装一些插件。<br>
                     5.安装了 PowerToys。<br>
@@ -114,7 +117,70 @@
                     <a href="https://qm.qq.com/q/m8hlYNeNqg" class="btn btn-primary tm-btn-big">参与该版本的内测</a>
                 </div>
                 <h5 class="text-center mb-4"><font color="#0078D4">
-                    以下是重制前版本(1.0 ~ 5.1)的内容，仅供参考。
+                    以下为 v6.0 的下载相关内容，暂未开放，仅供参考。
+                </font></h5>
+                <h5 class="text-center mb-4"><font color="#FF0000">
+                    请注意：123 网盘链接的文件可以在手机端免费下载！请不要白白给网盘送钱！<br>如果你喜欢我的产品，想要赞助支持我，请在我的
+                    B 站主页为我充电或者在爱发电进行赞助！
+                </font></h5>
+                <div class="text-center mb-5">
+                    <a href="https://afdian.com/a/nicrozoft" class="btn btn-primary tm-btn-big">赞助 Nicrozoft</a>
+                </div>
+                <h5 class="text-center mb-4"><font color="#0078D4">
+                    以下为 6.0 完整版的【esd 镜像】文件，文件格式为[.iso]
+                </font></h5>
+                <h5 class="text-center mb-4"><font color="#FF0000">
+                    <b>此版本适用于内存 ≥ 16G 的计算机！如果不满足请使用 wim 镜像！</b><br>
+                    该产品不可以使用第三方安装器安装！否则会遇到 Office 故障等问题！由此原因遇到的任何问题请不要反馈。
+                </font></h5>
+                <div class="text-center mb-5">
+                    <a href="checksums/win11ext_6.0_iso.txt" class="btn btn-primary tm-btn-big">查看文件校验和</a>
+                </div>
+                <div class="text-center mb-5">
+                    <a href=""
+                       class="btn btn-primary tm-btn-big">NTDrv 网盘链接</a>
+                </div>
+                <div class="text-center mb-5">
+                    <a href="" class="btn btn-primary tm-btn-big">123 网盘链接</a>
+                </div>
+                <br><br>
+                <h5 class="text-center mb-4"><font color="#0078D4">
+                    以下为 6.0 完整版的【wim 镜像】文件，文件格式为[.iso]
+                </font></h5>
+                <h5 class="text-center mb-4"><font color="#FF0000">
+                    <b>此版本适用于内存 < 16G 的计算机！如果 ≥ 16G 请使用 esd 镜像！</b><br>
+                    该产品不可以使用第三方安装器安装！否则会遇到 Office 故障等问题！由此原因遇到的任何问题请不要反馈。
+                </font></h5>
+                <div class="text-center mb-5">
+                    <a href="checksums/win11ext_6.0_iso.txt" class="btn btn-primary tm-btn-big">查看文件校验和</a>
+                </div>
+                <div class="text-center mb-5">
+                    <a href=""
+                       class="btn btn-primary tm-btn-big">NTDrv 网盘链接</a>
+                </div>
+                <div class="text-center mb-5">
+                    <a href="" class="btn btn-primary tm-btn-big">123 网盘链接</a>
+                </div>
+                <br><br>
+                <h5 class="text-center mb-4"><font color="#0078D4">
+                    以下为 6.0 基本版的【镜像】文件，文件格式为[.iso]
+                </font></h5>
+                <h5 class="text-center mb-4"><font color="#FF0000">
+                    该产品可以使用第三方安装器安装，但是不保证不出问题，由此原因遇到的任何问题请不要反馈。
+                </font></h5>
+                <div class="text-center mb-5">
+                    <a href="checksums/win11ext_6.0_iso.txt" class="btn btn-primary tm-btn-big">查看文件校验和</a>
+                </div>
+                <div class="text-center mb-5">
+                    <a href=""
+                       class="btn btn-primary tm-btn-big">NTDrv 网盘链接</a>
+                </div>
+                <div class="text-center mb-5">
+                    <a href="" class="btn btn-primary tm-btn-big">123 网盘链接</a>
+                </div>
+                <br><br>
+                <h5 class="text-center mb-4"><font color="#0078D4">
+                    以下是重制前版本(1.0 ~ 5.1)的内容，不建议阅读和使用。
                 </font></h5>
                 <p class="mb-4">
                     Windows 11 优化版 64位。<br>系统基于 Windows 11 24H2 专业工作站版。<br>此系统并不基于任何其他修改版。除安装程序外,
