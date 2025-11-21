@@ -81,24 +81,24 @@
                     基本版本未预装 Office、Adobe 等大型软件，仅预装系统优化必要的软件，具有更小的体积。<br>
                     此系统并不基于任何其他修改版。除安装程序外,也没有参考其他任何修改版。只有安装程序使用了 Rectify 11 的部分文件，
                     使其更加美观。同时该版本修复了安装程序启动管理器被吊销的问题。<br>
+                    该版本在审核模式下制作，并在封装前进行 Sysprep 通用化，解决了 SID 重复的问题，并且恢复了 OOBE。<br>
                     此系统使用 Windows 部署映像服务和管理工具 (Dism) 封装并将镜像转为 ESD 格式，
                     并使用 Dism++ 添加卷标识符。<br>
                     系统更改:<br>
                     1.添加 80+ 个主题。<br>
                     2.集成了所有版本的 Microsoft Visual C++ Runtime。<br>
                     3.系统设置微调。<br>
-                    4.为 Edge 添加了 Adguard 和 Tampermonkey 插件。<br>
-                    5.安装了 ExplorerBlurMica，将资源管理器设为全窗口 Acrylic。<br>
-                    6.安装了 Mica for Everyone，为各种窗口的框架设置为 Acrylic 材质。<br>
-                    7.安装了新版微软雅黑 (11.3.0) 的 SemiBold、SemiLight、Heavy 三个字号。<br>
-                    8.安装了 translucentTB 并将任务栏设为 Acrylic 半透明。<br>
-                    9.集成了 .NET 8.0 和 9.0，以及 .NET Framework 4.8.1 和 3.5 运行库。<br>
-                    10.安装了 7-Zip 并替换了压缩文件图标。<br>
-                    11.调整了 CPU 的调度偏好，提升了性能。<br>
-                    12.内置的激活工具从 HEU 改为 Nicrozoft Activator（基于 MAS）。<br>
-                    13.集成了 DirectX 运行时。<br>
-                    14.预装了一款驱动软件 Driver Boost。<br>
-                    15.预装了一款支持 HDR 且具有 OCR、拾色等功能的开源截图软件 Snow Shot。<br>
+                    4.安装了 ExplorerBlurMica，将资源管理器设为全窗口 Acrylic。<br>
+                    5.安装了 Mica for Everyone，为各种窗口的框架设置为 Acrylic 材质。<br>
+                    6.安装了新版微软雅黑 (11.3.0) 的 SemiBold、SemiLight、Heavy 三个字号。<br>
+                    7.安装了 translucentTB 并将任务栏设为 Acrylic 半透明。<br>
+                    8.集成了 .NET 8.0 和 9.0，以及 .NET Framework 4.8.1 和 3.5 运行库。<br>
+                    9.安装了 7-Zip 并替换了压缩文件图标。<br>
+                    10.调整了 CPU 的调度偏好，提升了性能。<br>
+                    11.内置的激活工具从 HEU 改为 Nicrozoft Activator（基于 MAS）。<br>
+                    12.集成了 DirectX 运行时。<br>
+                    13.预装了一款驱动软件 Driver Boost。<br>
+                    14.预装了一款支持 HDR 且具有 OCR、拾色等功能的开源截图软件 Snow Shot。<br>
                     完整版额外内容:<br>
                     1.安装了 Office 2024 专业增强版，并使用 Ohook 模式永久激活。<br>
                     2.安装了 Adobe 2025 中的 Photoshop、Premiere、After Effects、Audition、Acrobat 五款软件。<br>
@@ -106,7 +106,7 @@
                     4.安装了 Visual Studio Code 并安装一些插件。<br>
                     5.安装了 PowerToys。<br>
                     6.安装了 Everything。<br>
-                    7.集成了 Python 3.12、MinGW 15.1.0 x64 和 MinGW 15.1.0 x86。<br>
+                    7.集成了 Python 3.12、MinGW 15.1.0 x64、 MinGW 15.1.0 x86 和 JDK 21。<br>
                     <br><font color="#FF0000">© Nicrozoft Dev Group,
                     保留所有权利。<br>未经 Nicrozoft 允许, 禁止转载或修改该镜像、视频等内容, 否则 Nicrozoft 必将追究其责任！</font>
                 </p>
@@ -119,6 +119,15 @@
                 <h5 class="text-center mb-4"><font color="#0078D4">
                     以下为 v6.0 的下载相关内容，暂未开放，仅供参考。
                 </font></h5>
+                <h5 class="text-center mb-4"><font color="#FF0000">
+                    关于使用该系统前后遇到的任何问题的解答，请参阅 《安装前必读》与《安装后必读》。
+                </font></h5>
+                <div class="text-center mb-5">
+                    <a href="data/Win11Ext/安装前必读.docx" class="btn btn-primary tm-btn-big">阅读 《安装前必读》</a>
+                </div>
+                <div class="text-center mb-5">
+                    <a href="data/Win11Ext/安装后必读.docx" class="btn btn-primary tm-btn-big">阅读 《安装后必读》</a>
+                </div>
                 <h5 class="text-center mb-4"><font color="#FF0000">
                     请注意：123 网盘链接的文件可以在手机端免费下载！请不要白白给网盘送钱！<br>如果你喜欢我的产品，想要赞助支持我，请在我的
                     B 站主页为我充电或者在爱发电进行赞助！
@@ -137,11 +146,10 @@
                     <a href="checksums/win11ext_6.0_iso.txt" class="btn btn-primary tm-btn-big">查看文件校验和</a>
                 </div>
                 <div class="text-center mb-5">
-                    <a href=""
-                       class="btn btn-primary tm-btn-big">NTDrv 网盘链接</a>
+                    <a href="404.html" class="btn btn-primary tm-btn-big">NTOvi 网盘链接</a>
                 </div>
                 <div class="text-center mb-5">
-                    <a href="" class="btn btn-primary tm-btn-big">123 网盘链接</a>
+                    <a href="404.html" class="btn btn-primary tm-btn-big">123 网盘链接</a>
                 </div>
                 <br><br>
                 <h5 class="text-center mb-4"><font color="#0078D4">
@@ -155,11 +163,10 @@
                     <a href="checksums/win11ext_6.0_iso.txt" class="btn btn-primary tm-btn-big">查看文件校验和</a>
                 </div>
                 <div class="text-center mb-5">
-                    <a href=""
-                       class="btn btn-primary tm-btn-big">NTDrv 网盘链接</a>
+                    <a href="404.html" class="btn btn-primary tm-btn-big">NTOvi 网盘链接</a>
                 </div>
                 <div class="text-center mb-5">
-                    <a href="" class="btn btn-primary tm-btn-big">123 网盘链接</a>
+                    <a href="404.html" class="btn btn-primary tm-btn-big">123 网盘链接</a>
                 </div>
                 <br><br>
                 <h5 class="text-center mb-4"><font color="#0078D4">
@@ -172,11 +179,10 @@
                     <a href="checksums/win11ext_6.0_iso.txt" class="btn btn-primary tm-btn-big">查看文件校验和</a>
                 </div>
                 <div class="text-center mb-5">
-                    <a href=""
-                       class="btn btn-primary tm-btn-big">NTDrv 网盘链接</a>
+                    <a href="404.html" class="btn btn-primary tm-btn-big">NTOvi 网盘链接</a>
                 </div>
                 <div class="text-center mb-5">
-                    <a href="" class="btn btn-primary tm-btn-big">123 网盘链接</a>
+                    <a href="404.html" class="btn btn-primary tm-btn-big">123 网盘链接</a>
                 </div>
                 <br><br>
                 <h5 class="text-center mb-4"><font color="#0078D4">
