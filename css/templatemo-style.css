@@ -168,6 +168,26 @@ a:hover { color:#0078D4; }
     width: 90%;
 }
 
+.accordion summary {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px;
+    background: #eee;
+    border-radius: 4px;
+}
+
+.accordion .content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.35s ease;
+}
+
+/* 展开时 */
+.accordion[open] .content {
+    max-height: 2000px; /* 根据内容高度调整 */
+}
+
+
 .btn-primary:hover {
     background: #0886DC;
     transform: scale(1.03);
@@ -702,3 +722,4 @@ select:not([multiple]) {
 
     .tm-social-links li { margin-right: 3px; }
 }
+
