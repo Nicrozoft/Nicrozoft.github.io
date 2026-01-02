@@ -76,6 +76,9 @@
                 <h4 class="text-center mb-4"><font color="#0078D4">
                     Windows 11 优化版 x64<br>25H2 专业工作站版 v6.0
                 </font></h4>
+                <button class="btn btn-primary tm-btn-big text-center mb-5" onclick="document.getElementById('downloads').scrollIntoView({behavior:'smooth'})">
+                    前往下载
+                </button>
                 <p class="mb-4">
                     该系统在 v6.0 版本重制，从原版系统重新制作，重制后分为完整版本和基本版本，完整版本与重制前相似，但对系统进一步优化；
                     基本版本未预装 Office、Adobe 等大型软件，仅预装系统优化必要的软件，具有更小的体积。<br>
@@ -101,9 +104,11 @@
                     14.预装了一款支持 HDR 且具有 OCR、拾色等功能的开源截图软件 Snow Shot。<br>
                     15.预装了一款 Windows 插件管理软件 Windhawk，可用于修改一些 Windows 使用偏好。<br>
                     16.内置了一款磁盘管理软件 DiskGenius。<br>
+                    17.内置了软件卸载工具 Geek Uninstaller。<br>
                     完整版额外内容:<br>
                     1.安装了 Office 2024 专业增强版。<br>
-                    2.安装了 Adobe 2025 中的 Photoshop、Premiere、After Effects、Audition、Acrobat 五款软件。<br>
+                    2.安装了 Adobe 软件中的 Photoshop 2026、Premiere 2025、After Effects 2025、Audition 2025、Acrobat 2025、
+                    Illustrator 2025 六款软件。<br>
                     3.安装了 Files App。<br>
                     4.安装了 Visual Studio Code 并安装一些插件。<br>
                     5.安装了 PowerToys。<br>
@@ -139,7 +144,7 @@
                     <a href="data/Win11Ext/NZActivator/Nicrozoft_Activator.cmd" class="btn btn-primary tm-btn-big">下载 Nicrozoft Activator</a>
                 </div>
                 <br>
-                <h5 class="text-center mb-4"><font color="#0078D4">
+                <h5 class="text-center mb-4" id="downloads"><font color="#0078D4">
                     以下为 v6.0 的下载相关内容，暂未开放，仅供参考。
                 </font></h5>
                 <h5 class="text-center mb-4"><font color="#FF0000">
@@ -152,65 +157,28 @@
                     <a href="data/Win11Ext/安装后必读.pdf" class="btn btn-primary tm-btn-big">阅读 《安装后必读》</a>
                 </div>
                 <h5 class="text-center mb-4"><font color="#0078D4">
-                    以下为 6.0 完整版的【esd 镜像】文件，文件格式为[.iso]
+                    以下为 6.0 完整版的【镜像】文件，文件格式为[.iso]
                 </font></h5>
                 <h5 class="text-center mb-4"><font color="#FF0000">
-                    <b>此版本适用于内存 ≥ 16G 的计算机！如果不满足请使用 wim 镜像！</b><br>
-                    该产品不可以使用第三方安装器安装！否则会遇到 Office 故障等问题！由此原因遇到的任何问题请不要反馈。
+                    该产品不可以使用第三方安装器安装！否则会遇到 Office 故障等问题！由此原因遇到的任何问题不接受反馈。
                 </font></h5>
                 <details class="accordion">
                     <summary>点击展开或收起内容</summary>
                     <div class="content">
                         <div class="text-center mb-5">
-                            <a href="checksums/win11ext_6.0_full_esd_iso.txt" class="btn btn-primary tm-btn-big">查看文件校验和</a>
+                            <a href="checksums/win11ext_6.0_full_iso.txt" class="btn btn-primary tm-btn-big">查看文件校验和</a>
                         </div>
                         <div class="text-center mb-5">
-                            <a href="404.html" class="btn btn-primary tm-btn-big">[建议]联通网盘链接<br>
-                                <i>该下载链接需要登录，但不限速</i></a>
-                        </div>
-                        <div class="text-center mb-5">
-                            <a href="404.html" class="btn btn-primary tm-btn-big">OneDrive 网盘链接<br>
-                                <i>该下载链接无需登录，但是部分地区下载缓慢</i></a>
+                            <a href="404.html" class="btn btn-primary tm-btn-big">联通网盘链接<br>
+                                <i>该下载链接需要登录，但不限速，在部分地区文件有概率损坏</i></a>
                         </div>
                         <div class="text-center mb-5">
                             <a href="404.html" class="btn btn-primary tm-btn-big">123 网盘链接<br>
                                 <i>该下载链接需要登录，且下载可能需要付费，但不限速</i></a>
                         </div>
                         <div class="text-center mb-5">
-                            <a href="404.html" class="btn btn-primary tm-btn-big">NTOvi 网盘链接<br>
-                                <i>该下载链接无需登录，但是部分地区下载缓慢</i></a>
-                        </div>
-                        <div class="text-center mb-5">
-                            <a href="404.html" class="btn btn-primary tm-btn-big">百度网盘链接<br>
-                                <i>该下载链接需要登录，需要下载网盘客户端，非会员下载限速</i></a>
-                        </div>
-                    </div>
-                </details>
-                <br><br>
-                <h5 class="text-center mb-4"><font color="#0078D4">
-                    以下为 6.0 完整版的【wim 镜像】文件，文件格式为[.iso]
-                </font></h5>
-                <h5 class="text-center mb-4"><font color="#FF0000">
-                    <b>此版本适用于内存 < 16G 的计算机！如果 ≥ 16G 请使用 esd 镜像！</b><br>
-                    该产品不可以使用第三方安装器安装！否则会遇到 Office 故障等问题！由此原因遇到的任何问题请不要反馈。
-                </font></h5>
-                <details class="accordion">
-                    <summary>点击展开或收起内容</summary>
-                    <div class="content">
-                        <div class="text-center mb-5">
-                            <a href="checksums/win11ext_6.0_full_wim_iso.txt" class="btn btn-primary tm-btn-big">查看文件校验和</a>
-                        </div>
-                        <div class="text-center mb-5">
-                            <a href="404.html" class="btn btn-primary tm-btn-big">[建议]联通网盘链接<br>
-                                <i>该下载链接需要登录，但不限速</i></a>
-                        </div>
-                        <div class="text-center mb-5">
                             <a href="404.html" class="btn btn-primary tm-btn-big">OneDrive 网盘链接<br>
                                 <i>该下载链接无需登录，但是部分地区下载缓慢</i></a>
-                        </div>
-                        <div class="text-center mb-5">
-                            <a href="404.html" class="btn btn-primary tm-btn-big">123 网盘链接<br>
-                                <i>该下载链接需要登录，且下载可能需要付费，但不限速</i></a>
                         </div>
                         <div class="text-center mb-5">
                             <a href="404.html" class="btn btn-primary tm-btn-big">NTOvi 网盘链接<br>
@@ -227,7 +195,7 @@
                     以下为 6.0 基本版的【镜像】文件，文件格式为[.iso]
                 </font></h5>
                 <h5 class="text-center mb-4"><font color="#FF0000">
-                    该产品可以使用第三方安装器安装，但是不保证不出问题，由此原因遇到的任何问题请不要反馈。
+                    该产品可以使用第三方安装器安装，但是不保证不出问题，由此原因遇到的任何问题不接受反馈。
                 </font></h5>
                 <details class="accordion">
                     <summary>点击展开或收起内容</summary>
@@ -236,16 +204,16 @@
                             <a href="checksums/win11ext_6.0_basic_iso.txt" class="btn btn-primary tm-btn-big">查看文件校验和</a>
                         </div>
                         <div class="text-center mb-5">
-                            <a href="404.html" class="btn btn-primary tm-btn-big">[建议]联通网盘链接<br>
+                            <a href="404.html" class="btn btn-primary tm-btn-big">联通网盘链接<br>
+                                <i>该下载链接需要登录，但不限速，在部分地区文件有概率损坏</i></a>
+                        </div>
+                        <div class="text-center mb-5">
+                            <a href="404.html" class="btn btn-primary tm-btn-big">123 网盘链接<br>
                                 <i>该下载链接需要登录，但不限速</i></a>
                         </div>
                         <div class="text-center mb-5">
                             <a href="404.html" class="btn btn-primary tm-btn-big">OneDrive 网盘链接<br>
                                 <i>该下载链接无需登录，但是部分地区下载缓慢</i></a>
-                        </div>
-                        <div class="text-center mb-5">
-                            <a href="404.html" class="btn btn-primary tm-btn-big">[建议]123 网盘链接<br>
-                                <i>该下载链接需要登录，但不限速</i></a>
                         </div>
                         <div class="text-center mb-5">
                             <a href="404.html" class="btn btn-primary tm-btn-big">NTOvi 网盘链接<br>

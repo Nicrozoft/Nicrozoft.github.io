@@ -184,7 +184,7 @@ a:hover { color:#0078D4; }
 
 /* 展开时 */
 .accordion[open] .content {
-    max-height: 2000px; /* 根据内容高度调整 */
+    max-height: 20000px; /* 根据内容高度调整 */
 }
 
 
