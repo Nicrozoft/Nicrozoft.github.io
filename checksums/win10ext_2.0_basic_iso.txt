@@ -1,0 +1,6 @@
+文件名: Windows_10_Extended_ProfessionalWorkstation_v2.0_Basic_Nicrozoft.iso
+大小: 9.69 GiB (10,403,840,000 字节)
+CRC32: 02B60FE7
+MD5: 9fd28bf57203e711b3658f815ccb77cb
+SHA1: 294f926f35c6d6d0112ddbcdf7733f227c3627ab
+SHA256: 8b6202989ff6dc406fc634774afffe2e27d0575483e9544de0a674619b8dcc99
