@@ -1,0 +1,6 @@
+文件名: Windows_11_Extended_ProfessionalWorkstation_v6.0_Basic_Nicrozoft.iso
+大小: 9.45 GB (10,145,693,696 字节)
+CRC32: B30D797F
+MD5: 99ac3aab0cef75230bc9d8e779f836f8
+SHA1: 5d50cdc0e858abca05420f30a1fc064d5556a44c
+SHA256: ffaf6410f34fe51c01cedd19860042c1944f48ca3e61e5a7fc6b52ca07123fa5
