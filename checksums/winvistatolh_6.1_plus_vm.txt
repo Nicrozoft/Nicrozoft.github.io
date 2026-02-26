@@ -1,0 +1,6 @@
+文件名: Windows Vista Longhorn v6.1 Plus.7z
+大小: 13.6 GiB (14,598,268,639 字节)
+CRC32: A5BAFE81
+MD5: 6ddbfd398b865498de71f244ff906dfb
+SHA1: b6fd47fd229b1d87ba77ac9466455a3ac551e1d4
+SHA256: ae4fae7b7bd3e91e05e2ce04f7cdd8b699fc63e0853ee6ffefe70660556b84a5
